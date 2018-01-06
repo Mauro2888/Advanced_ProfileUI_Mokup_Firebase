@@ -7,7 +7,7 @@
 
 
   <RelativeLayout
-      android:layout_margin="20dp"
+      android:layout_margin="5dp"
       android:background="@drawable/background_shape"
       android:layout_width="match_parent"
       android:layout_height="match_parent"
@@ -23,11 +23,12 @@
         android:id="@+id/profile_image_activity"
         android:layout_width="140dp"
         android:layout_height="140dp"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="20dp"
         tools:src="@drawable/ic_empty_image_user"
         />
 
     <TextView
+        android:textSize="16sp"
         android:layout_below="@id/profile_image_activity"
         android:id="@+id/profile_text_name"
         android:fontFamily="@font/nunito_semibold"
@@ -48,6 +49,13 @@
         android:textAllCaps="false"
         android:text="@string/logout"
         android:background="@drawable/shape_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+    <ProgressBar
+        android:id="@+id/progress_profile"
+        android:indeterminate="true"
+        android:layout_centerVertical="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         />
