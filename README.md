@@ -1,2 +1,2 @@
 # ProfileUI
-Firebase database cloud, Authentication and Storage
+Profile App developed with Firebase database cloud with Authentication and Storage
