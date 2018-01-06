@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.bumptech.glide.Glide;
@@ -36,6 +37,7 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
   private String mUser;
   private CircleImageView mImageProfile;
   private TextView mUsername;
+  private ProgressBar mProgress;
 
   public ProfileFragment() {
   }
@@ -50,13 +52,16 @@ public class ProfileFragment extends Fragment implements View.OnClickListener{
     mLogout = view.findViewById(R.id.btn_logout);
     mImageProfile = view.findViewById(R.id.profile_image_activity);
     mUsername = view.findViewById(R.id.profile_text_name);
+    mProgress = view.findViewById(R.id.progress_profile);
     mLogout.setOnClickListener(this);
+    mProgress.setVisibility(View.VISIBLE);
 
     //get Current User
     mUser = mAuth.getCurrentUser().getUid();
 
     mFireStore.collection("Users").document(mUser).get().addOnSuccessListener(new OnSuccessListener<DocumentSnapshot>() {
       @SuppressLint("CheckResult") @Override public void onSuccess(DocumentSnapshot documentSnapshot) {
+      mProgress.setVisibility(View.GONE);
         if (documentSnapshot != null){
           String nameUser = documentSnapshot.getString("name");
           String userImage = documentSnapshot.getString("image");
