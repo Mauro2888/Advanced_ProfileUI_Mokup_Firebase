@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:padding="10dp"
+    android:background="@color/colorPrimary"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="profile.firebase.ui.advanced_profileui_mokup_firebase.RegisterActivity"
+    >
+
+  <LinearLayout
+
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <ProgressBar
+        android:visibility="gone"
+        android:indeterminate="true"
+        style="@style/Base.Widget.AppCompat.ProgressBar.Horizontal"
+        android:id="@+id/progress_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <TextView
+        android:textAlignment="center"
+        android:layout_margin="20dp"
+        android:padding="10dp"
+        android:textSize="24sp"
+        android:text="@string/title_main"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@color/colorWhite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:id="@+id/login_editText_email"
+        android:fontFamily="@font/nunito_semibold"
+        android:padding="12dp"
+        android:background="@drawable/shape"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/Email"
+        />
+
+    <EditText
+        android:id="@+id/login_editText_password"
+        android:inputType="textPassword"
+        android:fontFamily="@font/nunito_semibold"
+        android:padding="12dp"
+        android:background="@drawable/shape"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/password"
+        />
+
+    <Button
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite"
+        android:id="@+id/login_btn"
+        android:text="@string/login"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:padding="8dp"
+        android:background="@drawable/shape_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/new_account_btn"
+        android:text="@string/new_account"
+        android:layout_margin="15dp"
+        android:fontFamily="@font/nunito_extrabold"
+        android:textColor="@color/colorWhite"
+        android:padding="8dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+  </LinearLayout>
+
+</RelativeLayout>

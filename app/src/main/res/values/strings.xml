@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">Advanced_ProfileUI_Mokup_Firebase</string>
+  <string name="Email">Email..</string>
+  <string name="password">Password..</string>
+  <string name="name">Name..</string>
+  <string name="create_a_new_account">Create a new account</string>
+  <string name="login">Login</string>
+  <string name="title_main">Welcome to Advanced Firebase UI-Data</string>
+  <string name="new_account">Need an new Account? Click here !</string>
+  <string name="back_txt">Back to Login</string>
+  <string name="new_account_txt">Register a new Account</string>
+  <string name="logout">Logout</string>
+</resources>
