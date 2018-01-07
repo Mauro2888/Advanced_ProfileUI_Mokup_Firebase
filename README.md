@@ -1,5 +1,5 @@
 # ProfileUI
-Profile App developed with Firebase firestore cloud with Authentication and Storage
+Mockup Profile App developed with Firebase firestore cloud with Authentication and Storage
 <p align="center">
   <img src="https://user-images.githubusercontent.com/15950481/34645258-ea647188-f348-11e7-887a-8b75042d55a5.png" width="250"/>
   <img src="https://user-images.githubusercontent.com/15950481/34645256-ea206c18-f348-11e7-8493-da05a34bd779.png" width="250"/>
